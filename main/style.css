@@ -1,25 +1,30 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-*{
+body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: block;
 
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.icons img{
+#icons img {
     height: 1em;
     width: auto;
 }
 
-#blue{
+#blue {
     color: blue;
 }
 
@@ -29,4 +34,79 @@ a{
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.linker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.lk1:first-of-type {
+    margin-left: 15px;
+}
+
+.lk1 {
+
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+#profile {
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+}
+.translate {
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: rgb(34, 33, 33);
+    color: rgb(219, 213, 213);
+    padding: 15px 30px; /* Adjust padding as needed */
+}
+
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid black;
+    color: rgb(219, 213, 213);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 33, 33);
+}
+
+.footerlinks {
+    padding: 0 20px;
+    font-size: 14px; /* Use font-size instead of font */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(34, 33, 33);
+    color: rgb(219, 213, 213);
 }
